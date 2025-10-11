@@ -20,10 +20,10 @@ function Trending({ refresh }) {
 
   return (
     <section className="mt-6">
-      <h2 className="text-2xl font-bold mb-4 text-white">🔥 Trending Searches</h2>
+      <h2 className="text-2xl font-bold mb-4 text-white">🔥 Your Most and Recent Searches</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
         {trending.map((movie) => (
-          <Moviecard key={movie.id} movie={movie} />
+          <Moviecard key={movie.id} movie={movie} showfortrend={true}/>
         ))}
       </div>
     </section>
